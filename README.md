@@ -1,20 +1,54 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Weather Intelligence App 🌤️
 
-# Run and deploy your AI Studio app
+An AI-driven weather dashboard built using React, Vite, and Tailwind CSS. The application provides real-time atmospheric data, 5-day weather outlooks, and AI-generated environmental intelligence insights.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/9fb743c7-0164-49ba-a422-072b7f1e4c72
+## 🚀 Live Demo
+* **Live Web App:** [https://weather-intelligence-app-8ia.pages.dev](https://weather-intelligence-app-8ia.pages.dev)
+* **GitHub Repository:** [https://github.com/nikhilpatil12-byte/weather-intelligence-app](https://github.com/nikhilpatil12-byte/weather-intelligence-app)
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 🛠️ Deployment Workflow (Google AI Studio $\rightarrow$ GitHub $\rightarrow$ Cloudflare Pages)
 
+### Phase 1: Application Generation (Google AI Studio)
+1. Designed and iterated on the application prompt within **Google AI Studio**.
+2. Generated a full-stack React + Vite web application featuring responsive weather cards, dynamic search, and AI insights.
+3. Exported the project source files ensuring standard React project layout (`src/`, `package.json`, `index.html`, `vite.config.ts`).
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+### Phase 2: Code Versioning (GitHub)
+1. Created a public repository on GitHub: `nikhilpatil12-byte/weather-intelligence-app`.
+2. Committed the codebase directly to the root level of the `main` branch to prepare for CI/CD integration.
+
+---
+
+### Phase 3: Live Hosting (Cloudflare Pages)
+1. Linked the GitHub account to **Cloudflare Pages**.
+2. Created a new Pages project targeting `nikhilpatil12-byte/weather-intelligence-app` on the `main` branch.
+3. Configured production build parameters:
+   * **Framework preset:** `None` / `Vite`
+   * **Build command:** `npm run build`
+   * **Build output directory:** `dist`
+4. Triggered deployment pipeline for automatic continuous integration on every commit.
+
+---
+
+## ⚙️ Local Development Setup
+
+To run this project locally on your machine:
+
+```bash
+# 1. Clone repository
+git clone [https://github.com/nikhilpatil12-byte/weather-intelligence-app.git](https://github.com/nikhilpatil12-byte/weather-intelligence-app.git)
+
+# 2. Navigate to project directory
+cd weather-intelligence-app
+
+# 3. Install dependencies
+npm install
+
+# 4. Start local development server
+npm run dev
