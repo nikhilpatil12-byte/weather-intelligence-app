@@ -1,0 +1,6 @@
+{
+  "name": "Weather Intelligence",
+  "description": "Modern, responsive weather intelligence dashboard with city search, Open-Meteo geocoding and forecast data, 7-day high/low temperature trend chart, and context-aware planning recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
